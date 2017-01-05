@@ -5,12 +5,16 @@ gem 'rails', '5.0.1'
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
 end
 
 group :development do
   gem 'sqlite3'
   gem 'listen'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rails-controller-testing'
 end
 
 # Use SCSS for stylesheets
