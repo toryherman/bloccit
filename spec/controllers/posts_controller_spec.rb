@@ -100,7 +100,7 @@ RSpec.describe PostsController, type: :controller do
       expect(updated_post.body).to eq new_body
     end
 
-    it "redirects tot he updated post" do
+    it "redirects to the updated post" do
       new_title = RandomData.random_sentence
       new_body = RandomData.random_paragraph
 
