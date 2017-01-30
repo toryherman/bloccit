@@ -75,4 +75,10 @@ RSpec.describe Post, type: :model do
       end
     end
   end
+
+  describe "favorites" do
+    it "new post should be favorited by creator" do
+      expect(post.favorites.where(user_id: user.id).length).to eq(1)
+    end
+  end
 end
